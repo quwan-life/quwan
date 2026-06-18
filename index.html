@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="去玩" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="/quwan/manifest.json" />
+  <link rel="apple-touch-icon" href="/quwan/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/quwan/icons/icon-192.png" />
+  <title>去玩｜全国职业体验社区</title>
+  <script type="module" crossorigin src="/quwan/assets/index-ChWZQjkT.js"></script>
+  <link rel="stylesheet" crossorigin href="/quwan/assets/index-D-fnec4W.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    window.onerror = function(msg, src, line, col, err) {
+      var el = document.getElementById('root-error')
+      if (!el) {
+        el = document.createElement('div')
+        el.id = 'root-error'
+        el.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#fff;display:flex;align-items:center;justify-content:center;padding:40px;font-family:monospace;color:#c6613f'
+        document.body.appendChild(el)
+      }
+      el.innerHTML = '<div><h2>JS 运行时错误</h2><pre>' + msg + '\n文件: ' + src + '\n行: ' + line + '</pre></div>'
+    }
+  </script>
+  <script>
+    // Dev: 开发模式下禁用 SW 避免缓存导致 React 版本冲突
+    if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost')) {
+      navigator.serviceWorker.register('/sw.js').catch(()=>{})
+    }
+  </script>
+</body>
+</html>
