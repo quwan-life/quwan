@@ -1,0 +1,270 @@
+.page {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  background: #fff;
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 0;
+  color: #999;
+}
+
+/* ── Cover ──────────────────────────── */
+.cover {
+  width: 100%;
+  height: 220px;
+  background: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* PWA 状态栏侵入 */
+.coverCarousel {
+  --cover-safe-top: 0px;
+}
+@media (display-mode: standalone) {
+  .coverCarousel {
+    --cover-safe-top: env(safe-area-inset-top, 0px);
+    margin-top: calc(env(safe-area-inset-top, 0px) * -1);
+  }
+}
+
+.coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.backBtn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (display-mode: standalone) {
+  .backBtn {
+    top: calc(12px + env(safe-area-inset-top, 0px));
+  }
+}
+
+/* ── Content ────────────────────────── */
+.content {
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+/* ── Tags ───────────────────────────── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #666;
+}
+
+.tagStatus {
+  color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* ── Organization Card ──────────────── */
+.orgCard {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+.orgInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.orgAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.orgName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.orgBio {
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+}
+
+/* ── Divider ────────────────────────── */
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+/* ── Sections ───────────────────────── */
+.section {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 12px;
+}
+
+.reviewTitleEn {
+  font-size: 11px;
+  font-weight: 400;
+  color: #ccc;
+  margin-left: 4px;
+  letter-spacing: 1px;
+}
+
+.sectionBody {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* ── Notes Card ─────────────────────── */
+.notesCard {
+  padding: 16px;
+  background: #f7f6f3;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+.notesBody {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+/* ── Reviews ────────────────────────── */
+.emptyReview {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reviewItem {
+  padding: 14px;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.reviewAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewUser {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.reviewStars {
+  font-size: 11px;
+  color: #ff9800;
+}
+
+.reviewContent {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* ── Bottom Bar ──────────────────────── */
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 20px calc(12px + var(--tab-height, 0px));
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  z-index: 50;
+}
+
+.applyBtn {
+  width: 100%;
+  padding: 14px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* 期次列表 */
+.sessionList { display: flex; flex-direction: column; gap: 8px; }
+.sessionItem { display: flex; align-items: center; padding: 12px 14px; border: 1px solid #eee; border-radius: 3px; cursor: pointer; position: relative; }
+.sessionSelected { border-color: #111; background: #fafafa; }
+.sessionLeft { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.sessionNum { font-size: 13px; font-weight: 600; color: #111; }
+.sessionStatus { font-size: 10px; padding: 1px 6px; border-radius: 2px; }
+.session_pending { color: #66bb6a; background: #e8f5e9; }
+.session_booking { color: #2e7d32; background: #c8e6c9; }
+.session_ongoing { color: #e53935; background: #ffebee; }
+.session_completed { color: #999; background: #f5f5f5; }
+.sessionRight { flex: 1; min-width: 0; margin-left: 12px; }
+.sessionTime { font-size: 12px; color: #555; }
+.sessionMeta { font-size: 11px; color: #999; margin-top: 2px; }
+.sessionCheck { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font-size: 14px; color: #111; font-weight: 700; }

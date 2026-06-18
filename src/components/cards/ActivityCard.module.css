@@ -1,0 +1,60 @@
+/* ═══ 通用 ═══ */
+.statusOpen { flex-shrink: 0; font-size: 8px; font-weight: 500; color: #4a7c59; background: #e8f5e9; padding: 1px 4px; border-radius: 2px; white-space: nowrap; min-width: 38px; text-align: center; }
+.statusBooking { flex-shrink: 0; font-size: 8px; font-weight: 500; color: #fff; background: #66bb6a; padding: 1px 4px; border-radius: 2px; white-space: nowrap; min-width: 38px; text-align: center; }
+.statusOngoing { flex-shrink: 0; font-size: 8px; font-weight: 500; color: #8d6e00; background: #fff8e1; padding: 1px 4px; border-radius: 2px; white-space: nowrap; min-width: 38px; text-align: center; }
+.statusEnded { flex-shrink: 0; font-size: 8px; font-weight: 500; color: #999; background: #f0f0f0; padding: 1px 4px; border-radius: 2px; white-space: nowrap; min-width: 38px; text-align: center; }
+.statusUpcoming { flex-shrink: 0; font-size: 8px; font-weight: 500; color: #5c6bc0; background: #e8eaf6; padding: 1px 4px; border-radius: 2px; white-space: nowrap; min-width: 38px; text-align: center; }
+
+/* ═══ V1: 图文卡片 (共居社区) ═══ */
+.card { background: #fff; border-radius: 3px; overflow: hidden; cursor: pointer; border: 1px solid #eee; }
+.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.cardTop { display: flex; align-items: flex-start; justify-content: space-between; }
+.cardTitleRow { flex: 1; min-width: 0; display: flex; align-items: center; gap: 6px; }
+.cardTitle { font-size: 15px; font-weight: 700; color: #111; margin: 0; line-height: 1.5; }
+.newBadge { font-size: 10px; color: #e53935; background: rgba(229,57,53,0.1); padding: 1px 4px; border-radius: 2px; }
+.cardBody { padding: 14px 18px; }
+.cardMeta { display: flex; align-items: center; gap: 4px; font-size: 12px; color: #888; margin-top: 4px; }
+.metaAvatar { width: 16px; height: 16px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.metaName { color: #555; }
+.metaSep { color: #ccc; font-size: 11px; }
+.metaDate { color: #aaa; }
+.cardImages { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 10px; }
+.cardImg { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 2px; }
+
+/* ═══ V2: 大图卡片 (hero / HS同城) ═══ */
+.heroCard { background: #fff; border-radius: 3px; overflow: hidden; cursor: pointer; border: 1px solid #eee; }
+.heroCard:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.heroCover { position: relative; }
+.heroImg { width: 100%; aspect-ratio: 2/1; object-fit: cover; display: block; }
+.heroStatus { position: absolute; top: 6px; right: 6px; z-index: 1; font-size: 8px; font-weight: 500; padding: 1px 4px; border-radius: 2px; min-width: 38px; text-align: center; }
+.heroBody { padding: 10px 14px; }
+.heroTitle { font-size: 14px; font-weight: 700; color: #111; margin: 0; line-height: 1.3; }
+.heroMeta { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #999; margin-top: 2px; }
+.heroAvatar { width: 14px; height: 14px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.heroName { color: #555; }
+.heroSep { color: #ccc; font-size: 11px; }
+.heroCity { color: #999; }
+.heroDate { color: #aaa; }
+.heroDesc { font-size: 11px; color: #666; line-height: 1.4; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ═══ V3: 纯文字小卡片 (职业体验) ═══ */
+.textCard { background: #fff; border-radius: 3px; cursor: pointer; border: 1px solid #eee; }
+.textCard:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.textCardBody { padding: 14px 18px; }
+.textTitleRow { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 4px; }
+.textTitle { font-size: 14px; font-weight: 600; color: #111; margin: 0; line-height: 1.6; }
+.textMeta { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #999; margin-top: 2px; }
+.textMetaAvatar { width: 16px; height: 16px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.textSep { color: #ccc; font-size: 10px; }
+
+/* ═══ V4: 大卡片纯文字 (compact) ═══ */
+.compactCard { padding: 18px 20px; background: #fff; border-radius: 3px; cursor: pointer; border: 1px solid #eee; }
+.compactBody { }
+.compactTop { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 6px; }
+.compactTitle { font-size: 16px; font-weight: 700; color: #111; margin: 0; line-height: 1.5; flex: 1; min-width: 0; }
+.compactMeta { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; font-size: 12px; color: #888; }
+.compactAvatar { width: 16px; height: 16px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.compactName { font-size: 12px; color: #555; }
+.compactTags { display: flex; align-items: center; gap: 4px; margin-bottom: 10px; font-size: 11px; color: #aaa; }
+.compactSep { color: #ccc; font-size: 11px; }
+.compactDesc { font-size: 13px; color: #555; line-height: 1.7; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; max-width: 70%; }

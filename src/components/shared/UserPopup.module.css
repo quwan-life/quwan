@@ -1,0 +1,134 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  animation: fadeIn .2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup {
+  width: 260px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 24px 20px 18px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .15);
+  animation: slideUp .25s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all .15s;
+}
+.closeBtn:hover {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-bg);
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.bio {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-align: center;
+  line-height: 1.4;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.followBtn {
+  padding: 7px 32px;
+  border: none;
+  border-radius: 3px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .15s;
+}
+.followBtn:active {
+  opacity: .85;
+  transform: scale(.97);
+}
+
+.followingBtn {
+  padding: 7px 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #f9f9f9;
+  color: #999;
+  font-size: 13px;
+  cursor: default;
+}
+
+.msgBtn {
+  padding: 7px 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+}
+.msgBtn:active {
+  background: var(--color-primary-light, #fef5f2);
+  opacity: .85;
+}

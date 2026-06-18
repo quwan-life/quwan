@@ -1,0 +1,137 @@
+.activityInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 16px;
+  padding: 10px;
+  background: var(--color-card);
+  border-radius: var(--border-radius);
+}
+
+.cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.infoText {
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.infoDate {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.textarea {
+  width: calc(100% - 32px);
+  margin: 0 16px;
+  min-height: 120px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--color-card);
+  resize: vertical;
+}
+
+.imageSection {
+  margin: 12px 16px;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.imageItem {
+  width: 72px;
+  height: 72px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.removeBtn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.addImage {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px dashed #ccc;
+  border-radius: 3px;
+  color: #999;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  position: sticky;
+  bottom: 0;
+  background: var(--color-bg);
+}
+
+.draftBtn {
+  flex: 1;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: var(--color-card);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+}
+.draftBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.submitBtn {
+  flex: 2;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.submitBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

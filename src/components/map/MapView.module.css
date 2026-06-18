@@ -1,0 +1,198 @@
+/* 地图区域 */
+.mapArea {
+  height: 40vh;
+  min-height: 220px;
+  background: #e8f0f0;
+  position: relative;
+}
+
+.mapContainer {
+  position: absolute;
+  inset: 0;
+}
+
+.mapFallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecf2f2;
+}
+
+.fallbackText {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 列表区域 */
+.listArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 12px 80px;
+  background: var(--color-bg);
+}
+
+.listTitle {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.mapCard {
+  background: #fff;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.mapCard.expanded {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cardRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cardInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cardTitleRow .cardTitle {
+  flex: 1;
+  min-width: 0;
+}
+
+.bookBtn {
+  padding: 3px 12px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.metaAvatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cardLocRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.cardStatus {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.st_booking_open, .st_active { background: #e8f5e9; color: #4caf50; }
+.st_upcoming { background: #fff3e0; color: #e65100; }
+.st_ongoing { background: #e3f2fd; color: #1565c0; }
+.st_completed, .st_booking_closed { background: #f5f5f5; color: #999; }
+
+.cardCity {
+  font-size: 10px;
+  color: var(--color-primary);
+  background: #fdf5f2;
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+
+.cardTime {
+  font-size: 10px;
+  color: #bbb;
+}
+
+.cardPrice {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.cardLoc {
+  font-size: 10px;
+  color: #bbb;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expandIcon {
+  font-size: 14px;
+  color: #bbb;
+  flex-shrink: 0;
+}
+
+.imageRow {
+  display: flex;
+  gap: 6px;
+  padding: 0 12px 12px;
+}
+
+.expandImg {
+  width: calc((100% - 12px) / 3);
+  aspect-ratio: 4/3;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.detailBtn {
+  padding: 6px 12px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: flex-end;
+}

@@ -1,0 +1,6 @@
+.tabs { display: flex; gap: 0; padding: 12px 20px; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 45px; z-index: 50; }
+.tab { flex: 1; text-align: center; padding: 10px 0; border: 1px solid #ddd; border-left: none; background: #fff; font-size: 13px; color: #666; cursor: pointer; }
+.tab:first-child { border-radius: 2px 0 0 2px; border-left: 1px solid #ddd; }
+.tab:last-child { border-radius: 0 2px 2px 0; }
+.active { background: #111; color: #fff; border-color: #111; }
+.active:first-child { border-left-color: #111; }

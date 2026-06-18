@@ -1,0 +1,170 @@
+.toolbar {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+}
+
+.filterBtn {
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #888;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+.filterBtn.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.inviteEntry {
+  font-size: 12px;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.list {
+  padding: 0 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--border-radius);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.statusTag {
+  font-size: 10px;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.cardBody {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #999;
+}
+
+.detailBtn {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  color: #666;
+  background: none;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.approveBtn {
+  padding: 6px 20px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.rejectBtn {
+  padding: 6px 20px;
+  background: #f5f5f5;
+  color: #888;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 14px;
+}
+
+.featureBtn {
+  height: 28px;
+  padding: 0 12px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: none;
+  border-radius: 3px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.featuredBadge {
+  font-size: 10px;
+  color: var(--color-primary);
+  background: #fdf5f2;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.featurePanel {
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 0 4px;
+  margin-top: 4px;
+}
+
+.featureLabel {
+  font-size: 11px;
+  color: #999;
+}
+
+.featureOptions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.featurePos {
+  flex: 1;
+  height: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.posActive {
+  border-color: var(--color-primary);
+  background: #fdf5f2;
+  color: var(--color-primary);
+  font-weight: 600;
+}

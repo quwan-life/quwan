@@ -1,0 +1,172 @@
+.container {
+  padding: 8px 20px 32px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 4px;
+}
+
+.activityName {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 24px;
+}
+
+/* ── Field ───────────────────────────── */
+.field {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.step {
+  color: #111;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* ── Input ──────────────────────────── */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #111;
+  background: #fff;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+/* ── Option Group ────────────────────── */
+.optionGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.option {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.optionActive {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* ── Counter ─────────────────────────── */
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 6px;
+  background: #fafafa;
+}
+
+.counterBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.counterBtn:active {
+  background: #f0f0f0;
+}
+
+.counterVal {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* ── Textarea ────────────────────────── */
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.6;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus {
+  border-color: #111;
+  background: #fff;
+}
+
+.textarea::placeholder {
+  color: #ccc;
+}
+
+.charCount {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+/* ── Submit ──────────────────────────── */
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submitBtn:active {
+  opacity: 0.9;
+}

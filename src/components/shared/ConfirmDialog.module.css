@@ -1,0 +1,58 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 998;
+  pointer-events: none;
+}
+.dialog {
+  background: #fff;
+  border-radius: 3px 3px 0 0;
+  padding: 24px 20px calc(20px + var(--tab-height));
+  width: 100%;
+  max-width: 500px;
+  animation: slideUp 0.2s ease;
+  pointer-events: auto;
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.15);
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.msg {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.cancel {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+.ok {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.ok:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,105 @@
+.list {
+  padding: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-card);
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bio {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.msgBtn {
+  padding: 6px 16px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog {
+  background: #fff;
+  border-radius: 3px;
+  padding: 24px 20px 16px;
+  width: 280px;
+  text-align: center;
+}
+.dialogTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.dialogBody {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.dialogBtns {
+  display: flex;
+  gap: 10px;
+}
+.cancelBtn,
+.confirmBtn {
+  flex: 1;
+  height: 38px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+.cancelBtn { background: #f0f0f0; color: #666; }
+.confirmBtn { background: var(--color-primary); color: #fff; }
+
+.unfollowBtn {
+  padding: 3px 10px;
+  border: 1px solid #e88;
+  color: #e55;
+  background: none;
+  border-radius: 2px;
+  font-size: 11px;
+  cursor: pointer;
+  margin-left: 4px;
+}

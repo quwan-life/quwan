@@ -1,0 +1,10 @@
+.page { min-height: 100vh; padding-bottom: calc(var(--tab-height) + 80px); background: #f5f5f5; }
+
+.list { padding: 4px 20px 0; display: flex; flex-direction: column; gap: 4px; }
+
+.floatPublish { position: fixed; bottom: calc(var(--tab-height) + 12px); right: 20px; color: #111; font-size: 12px; font-weight: 600; cursor: pointer; z-index: 100; }
+
+/* ── 轮播箭头 ── */
+:global(.banner-container .arrow-bar) { opacity: 0; transition: opacity 0.3s; }
+:global(.banner-container:hover .arrow-bar),
+:global(.banner-container.arrows-visible .arrow-bar) { opacity: 1; }

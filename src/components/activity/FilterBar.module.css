@@ -1,0 +1,65 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 11px;
+  background: var(--color-card);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  transition: all .15s;
+}
+.item.active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.checkbox {
+  width: 13px;
+  height: 13px;
+  border: 1.5px solid #ccc;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.checkmark {
+  width: 6px;
+  height: 3px;
+  border-left: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  margin-top: -1px;
+}
+
+.mapBtn {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  background: var(--color-card);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
